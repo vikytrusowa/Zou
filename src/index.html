@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Zou</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style/css/style.css" rel="stylesheet">
     <link href="img/Favicon.png" rel="icon">
 </head>
 <body>
 <header class="header" id="home">
     <div class="header__wrapper">
         <div class="heading">
-            <div class="heading__pagination">
-                <img src="img/Logo.svg" alt="Logo">
-                <nav class="heading__pagination--navigation">
+            <div class="pagination">
+                <img src="img/Logo.svg" alt="Logo" class="pagination__logo">
+                <nav class="pagination__navigation">
                     <ul class="menu">
                         <li class="menu__element"><a href="#home" class="menu__element--link">Home</a></li>
                         <li class="menu__element"><a href="#product" class="menu__element--link">Product</a></li>
@@ -33,28 +33,29 @@
 
     </div>
 </header>
-<section class="wrapper">
-    <div class="opportunities">
-        <h2 class="opportunities__title">New Opportunities</h2>
-        <p class="opportunities__info">We are the first and the only crowdfunding platform enabling you to help finance
+<section class="opportunities">
+    <div class="wrapper">
+        <h2 class="wrapper__title">New Opportunities</h2>
+        <p class="wrapper__info">We are the first and the only crowdfunding platform enabling you to help finance
             our farmers.</p>
         <div class="features">
-            <div class="features__element features__white">
+            <div class="element features__element--white">
                 <img src="img/Icon1.svg" alt="icon">
-                <h4 class="features__white--title">Connect with our farmers</h4>
-                <p class="features__white--info">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                <h4 class="element__title">Connect with our farmers</h4>
+                <p class="element__info">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
                     fugit, sed quia consequuntur magni dolores</p>
             </div>
-            <div class="features__element features__green">
+            <div class="element features__element--green">
                 <img src="img/Icon2.svg" alt="icon">
-                <h4 class="features__green--title">Grow your business</h4>
-                <p class="features__green--info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                <h4 class="element__title element__title--green">Grow your business</h4>
+                <p class="element__info element__info--green">Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
                     accusantium doloremque laudantium</p>
             </div>
-            <div class="features__element features__white">
+            <div class="element features__element--white">
                 <img src="img/Icon3.svg" alt="icon">
-                <h4 class="features__white--title">Social Impact Invesment</h4>
-                <p class="features__white--info">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                <h4 class="element__title">Social Impact Invesment</h4>
+                <p class="element__info">At vero eos et accusamus et iusto odio dignissimos ducimus qui
                     blanditiis praesentium voluptatum deleniti </p>
             </div>
         </div>
@@ -62,26 +63,25 @@
 </section>
 <section class="invest" id="product">
     <div class="invest__line"></div>
-    <div class="invest__info">
-        <h2 class="invest__info--title">Invest on your convenience</h2>
-        <p class="invest__info--text">Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+    <div class="info">
+        <h2 class="info__title">Invest on your convenience</h2>
+        <p class="info__text">Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
             molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         <div class="investment">
-            <div class="investment__element short">
-                <span class="investment__element--subtitle">NEW FARM TODAY</span>
-                <h4 class="investment__element--title">Short terms investment</h4>
-                <p class="investment__element--info">Invest in farms that will be ready for harvest in 3-18 months</p>
-                <a href="#" class="investment__element--link">Browse Farm</a>
+            <div class="block short">
+                <span class="block__subtitle">NEW FARM TODAY</span>
+                <h4 class="block__title">Short terms investment</h4>
+                <p class="block__info">Invest in farms that will be ready for harvest in 3-18 months</p>
+                <a href="#" class="block__link">Browse Farm</a>
             </div>
-            <div class="investment__element long">
-                <span class="investment__element--subtitle">FULLY FUNDED</span>
-                <h4 class="investment__element--title">Long terms investment</h4>
-                <p class="investment__element--info">Consider farms that have long term investment program.</p>
-                <a href="#" class="investment__element--link">Learn more</a>
+            <div class="block long">
+                <span class="block__subtitle">FULLY FUNDED</span>
+                <h4 class="block__title">Long terms investment</h4>
+                <p class="block__info">Consider farms that have long term investment program.</p>
+                <a href="#" class="block__link">Learn more</a>
             </div>
         </div>
     </div>
-
 </section>
 <section class="works" id="team">
     <h2 class="works__title">How it works</h2>
@@ -89,7 +89,7 @@
         up not only by Zou, but also by the best land, family heritage, innovation and overall superior expertise.</p>
     <div class="works__line">
         <div class="level">
-            <a href="#" class="level__switch activ">01</a>
+            <a href="#" class="level__switch level__switch--activ">01</a>
             <a href="#" class="level__switch">02</a>
             <a href="#" class="level__switch">03</a>
             <a href="#" class="level__switch">04</a>
@@ -106,81 +106,82 @@
 <section class="testimonial" id="blog">
     <h2 class="testimonial__title">What investors like you are saying about Zou</h2>
     <div class="slider">
-        <div class="slider__element">
-            <div class="slider__element--heading">
+        <div class="slide">
+            <div class="slide__heading">
                 <img src="img/testimonial1.png" alt="Fernando">
                 <div class="subject">
                     <span class="subject__name">Fernando Soler</span>
                     <span class="subject__profession">Head of Agrogofund Groups</span>
                 </div>
             </div>
-            <p class="slider__element--text"> Consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            <p class="slide__text"> Consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
                 pariatur?</p>
         </div>
-        <div class="slider__element">
-            <div class="slider__element--heading">
+        <div class="slide">
+            <div class="slide__heading">
                 <img src="img/testimonial1.png" alt="Fernando">
                 <div class="subject">
                     <span class="subject__name">Fernando Sole</span>
                     <span class="subject__profession">Telecommunication Engineer</span>
                 </div>
             </div>
-            <p class="slider__element--text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+            <p class="slide__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
                 nihil molestiae</p>
         </div>
-        <div class="slider__element">
-            <div class="slider__element--heading">
+        <div class="slide slider__slide--next">
+            <div class="slide__heading ">
                 <img src="img/testimonial3.png" alt="Ilone">
                 <div class="subject">
                     <span class="subject__name">Ilone Pickford</span>
                     <span class="subject__profession">Head of Agrogofund Groups</span>
                 </div>
             </div>
-            <p class="slider__element--text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+            <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium </p>
         </div>
-        <div class="slider__element">
-            <div class="slider__element--heading">
+        <div class="slide slider__slide--next">
+            <div class="slide__heading">
                 <img src="img/testimonial4.png" alt="Ed">
                 <div class="subject">
                     <span class="subject__name">Ed O’Brien</span>
                     <span class="subject__profession">Herbalist</span>
                 </div>
             </div>
-            <p class="slider__element--text">Ui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et
+            <p class="slide__text">Ui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et
                 accusamus</p>
         </div>
     </div>
-    <button class=" testimonial__button prev"><span class="prev__element"></span></button>
-    <button class=" testimonial__button next"><span class="next__element"></span></button>
+    <button class=" testimonial__button prev js-button" data-route="prev"><span class="prev__element"></span></button>
+    <button class=" testimonial__button next js-button" data-route="next"><span class="next__element"></span></button>
 </section>
-<footer class="wrap" id="contact">
-    <div class="footer">
-        <div class="footer__heading">
-            <h2 class="footer__heading--title">The future of <span
-                    class="footer__heading--subject">Farm Investing</span> is Zou</h2>
-            <button class="footer__heading--button">Invest Now</button>
+<footer class=" footer" id="contact">
+    <div class="wrap">
+        <div class="cap">
+            <h2 class="cap__title">The future of
+                <span class="cap__subject">Farm Investing</span>
+                is Zou</h2>
+            <button class="cap__button">Invest Now</button>
         </div>
-        <div class="footer__item">
+        <div class="wrap__item">
             <ul class="list">
                 <li class="list__name">COMPANY</li>
-                <li><a href="#" class="list__link">About Us</a></li>
-                <li><a href="#" class="list__link">Team</a></li>
-                <li><a href="#" class="list__link">Careers</a></li>
-                <li><a href="#" class="list__link">Contact</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">About Us</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Team</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Careers</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Contact</a></li>
             </ul>
             <ul class="list">
-                <li class="list__name">INVEST</li>
-                <li><a href="#" class="list__link">Features</a></li>
-                <li><a href="#" class="list__link">How it works</a></li>
-                <li><a href="#" class="list__link">Pricing</a></li>
-                <li><a href="#" class="list__link">Login</a></li>
+                <li class="list__name ">INVEST</li>
+                <li class="list__element"><a href="#" class="list__element--link">Features</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">How it works</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Pricing</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Login</a></li>
             </ul>
             <ul class="list">
                 <li class="list__name">LEGAL</li>
-                <li><a href="#" class="list__link">Privacy</a></li>
-                <li><a href="#" class="list__link">Terms</a></li>
-                <li><a href="#" class="list__link">Security</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Privacy</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Terms</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Security</a></li>
             </ul>
             <div class="meta">
                 <h4 class="meta__title">Blog Zou</h4>
@@ -189,7 +190,7 @@
                 <button class="meta__button"><img src="img/sing_up.svg" alt="sing">Sign In</button>
             </div>
         </div>
-        <div class="footer__line"></div>
+        <div class="wrap__line"></div>
         <div class="desc">
             <img src="img/Logo.svg" alt="logo">
             <span class="desc__text">© Copyright 2018. Zou Capital Pty Ltd (ABN 45 4545 87363).</span>
