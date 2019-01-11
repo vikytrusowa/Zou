@@ -40,12 +40,12 @@
 
 
                 if (selector.data('slick-index') === firsElementPosition) {
-                    selector.addClass('slider__slide--prev');
+                    selector.addClass('slide__prev');
 
                 }
                 if (selector.data('slick-index') === lastElementPosition) {
-                    selector.removeClass('slider__slide--prev');
-                    selector.removeClass('slider__slide--next');
+                    selector.removeClass('slide__prev');
+                    selector.removeClass('slide__next');
 
 
                 }
@@ -58,12 +58,12 @@
 
 
                 if (selector.data('slick-index') === firsElementPosition) {
-                    selector.addClass('slider__slide--next');
+                    selector.addClass('slide__next');
 
                 }
                 if (selector.data('slick-index') === lastElementPosition) {
-                    selector.removeClass('slider__slide--next');
-                    selector.removeClass('slider__slide--prev');
+                    selector.removeClass('slide__next');
+                    selector.removeClass('slide__prev');
 
 
                 }
