@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="header" id="home">
-    <div class="header__wrapper">
+    <div class="header__wrapper container">
         <div class="heading">
             <div class="pagination">
                 <img src="img/Logo.svg" alt="Logo" class="pagination__logo">
@@ -38,7 +38,7 @@
         <h2 class="content__title">New Opportunities</h2>
         <p class="content__info">We are the first and the only crowdfunding platform enabling you to help finance
             our farmers.</p>
-        <div class="features">
+        <div class="features container">
             <div class="items items__white">
                 <img src="img/Icon1.svg" alt="icon">
                 <h4 class="items__title">Connect with our farmers</h4>
@@ -61,7 +61,7 @@
         </div>
     </div>
 </section>
-<section class="invest" id="product">
+<section class="invest container" id="product">
     <div class="invest__line"></div>
     <div class="info">
         <h2 class="info__title">Invest on your convenience</h2>
@@ -83,7 +83,7 @@
         </div>
     </div>
 </section>
-<section class="works" id="team">
+<section class="works container" id="team">
     <h2 class="works__title">How it works</h2>
     <p class="works__info">Take your pick from the supply chain and participate in agribusiness projects that are backed
         up not only by Zou, but also by the best land, family heritage, innovation and overall superior expertise.</p>
@@ -104,7 +104,10 @@
     </div>
 </section>
 <section class="testimonial" id="blog">
-    <h2 class="testimonial__title">What investors like you are saying about Zou</h2>
+    <div class="container">
+        <h2 class="testimonial__title">What investors like you are saying about Zou</h2>
+    </div>
+
     <div class="slider">
         <div class="slide">
             <div class="slide__heading">
@@ -173,11 +176,14 @@
                 accusamus</p>
         </div>
     </div>
-    <button class=" testimonial__button prev js-button" data-route="prev"><span class="prev__element"></span></button>
-    <button class=" testimonial__button next js-button" data-route="next"><span class="next__element"></span></button>
+    <div class="container">
+        <button class=" testimonial__button prev js-button" data-route="prev"><span class="prev__element"></span></button>
+        <button class=" testimonial__button next js-button" data-route="next"><span class="next__element"></span></button>
+    </div>
+
 </section>
 <footer class=" footer" id="contact">
-    <div class="wrap">
+    <div class="wrap container">
         <div class="cap">
             <h2 class="cap__title">The future of
                 <span class="cap__subject">Farm Investing</span>
