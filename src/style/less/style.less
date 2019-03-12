@@ -13,6 +13,41 @@ body {
   line-height: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.title{
+  font-weight: bold;
+  line-height: 64px;
+  font-size: 36px;
+  color: @black;
+}
+.link{
+  font-size: 16px;
+  color: @black;
+  text-decoration: none;
+}
+.button{
+  width: 128px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.text{
+  line-height: 32px;
+  font-size: 18px;
+}
+.font16{
+  line-height: 24px;
+  font-size: 16px;
+}
+.font18{
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 18px;
+}
 .container {
   width: 80%;
   max-width: 1440px;
@@ -33,12 +68,12 @@ body {
   .row();
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 125px;
 
   &__button {
     background: transparent;
     border: 1px solid @white;
     box-sizing: border-box;
-    .button();
     color: #F1F8E9;
     .row();
     justify-content: space-evenly;
@@ -61,10 +96,9 @@ body {
   .row();
 
   &__element {
-    padding: 0 10px;
+    margin: 0 10px;
 
     &--link {
-      .link();
 
       &:hover {
         color: @green;
@@ -75,20 +109,18 @@ body {
 
 .preview {
   width: 40%;
-  margin: 125px 0;
+  margin: 0 0 125px;
 
   &__title {
-    .title();
     font-size: 46px;
+    margin: 0 0 26px;
   }
 
   &__text {
-    .text();
     color: #263238;
-    margin: 26px 0 54px;
+    margin: 0 0 54px;
   }
   &__button {
-    .button();
     box-shadow: 0 13px 20px rgba(118, 196, 125, 0.411204);
     background: @green;
     border: none;
@@ -107,35 +139,42 @@ body {
 .opportunities {
   background: url("../../img/Bg_shapes.png") no-repeat;
   margin: -475px 0 0;
-}
-
-.content {
-  padding: 485px 0 104px;
-
+  &__wrapper {
+    padding: 485px 0 42px;
+  }
+  &__heading {
+    padding: 0 295px;
+  }
   &__title {
-    .title();
     text-align: center;
-
+    margin: 0 0 14px;
   }
 
   &__info {
-    .text();
     text-align: center;
-    width: 39%;
-    margin: 14px auto 62px;
     color: #324148;
   }
 }
 
 .features {
-  .row();
-  justify-content: space-around;
+  width: 100%;
+  display: inline-flex;
+  margin: 0 -20px;
+  padding: 62px 72px;
 
 }
 
 .items {
-  padding: 48px;
-  width: 22%;
+  padding: 30px;
+  width: 33%;
+  margin: 0 20px;
+
+  &__image {
+    margin: 0 0 21px;
+  }
+  &__green-image {
+    margin: 0 0 60px;
+  }
 
   &__white {
     background: @white;
@@ -154,20 +193,17 @@ body {
     }
   }
   &__title {
-    .font18();
     color: #263238;
-    margin: 21px 0;
-    width: 58%;
+    margin: 0 0 20px;
+    padding: 0 50px 0 0;
 
     &--green {
       color: @white;
-      margin: 60px 0 15px;
-      width: 70%;
+      margin: 0 0 15px;
     }
   }
 
   &__info {
-    .font16();
     color: #263238;
 
     &--green {
@@ -188,31 +224,36 @@ body {
 }
 
 .info {
-  padding: 82px 72px;
+  padding: 80px 70px;
+  margin: 0 0 35px;
+
+  &__heading {
+    padding: 0 350px 0 0;
+    margin: 0 0 60px;
+  }
 
   &__title {
-    .title();
     margin: 0 0 14px;
   }
 
   &__text {
-    .text();
+
     color: #324148;
-    width: 60%;
+
   }
 }
 
 .investment {
-  .row();
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 0 94px;
+  margin: 0 -15px;
+  width: 100%;
+  display: inline-flex;
+
 }
 
 .farms {
-  padding: 49px 66px;
-  width: 356px;
-  margin: 94px 0 0;
+  padding: 40px 160px 55px 70px;
+  width: 50%;
+  margin: 0 15px;
   border-radius: 5px;
 
   &__subtitle {
@@ -220,14 +261,14 @@ body {
     font-size: 14px;
     letter-spacing: 2.8px;
     color: @green;
+    margin: 0 0 80px;
   }
   &__title {
     line-height: 40px;
     font-size: 31px;
     color: @white;
     position: relative;
-    margin: 82px 0 18px;
-    width: 85%;
+    margin: 0 0 18px;
 
     &:before {
       content: "";
@@ -241,14 +282,11 @@ body {
     }
   }
   &__info {
-    .font16();
     color: #E2EFD2;
-    width: 70%;
     margin: 0 0 28px;
 
   }
   &__link {
-    .text();
     text-align: center;
     color: @green;
     background: @white;
@@ -265,7 +303,6 @@ body {
 .short {
   background: url("../../img/short.png") no-repeat;
   background-size: cover;
-
 }
 
 .long {
@@ -277,24 +314,22 @@ body {
   background: url("../../img/bg_works.png") no-repeat;
   background-size: cover;
   text-align: center;
+  padding: 105px 220px;
+  margin: 0 auto 270px;
 
   &__title {
-    .title();
     color: @white;
-    padding: 106px 0 14px;
+    margin: 0 0 15px;
   }
 
   &__info {
-    .text();
     color: #E8F5E9;
-    width: 61%;
     margin: 0 auto;
   }
 
   &__line {
     background: #A5D6A7;
     position: relative;
-    width: 61%;
     height: 2px;
     margin: 85px auto 115px;
   }
@@ -330,11 +365,9 @@ body {
 }
 
 .description {
-  width: 61%;
   margin: 0 auto;
-  padding: 0 0 143px;
+  padding: 0 0 40px;
   .row();
-  justify-content: space-between;
 
   &__name {
     font-weight: bold;
@@ -342,26 +375,28 @@ body {
     font-size: 24px;
     color: @white;
     text-align: left;
+    margin: 0 56px 0 0;
   }
   &__info {
-    .font16();
     color: #E8F5E9;
     text-align: left;
-    width: 105%;
-    margin: 0 0 0 56px;
+
   }
 }
 
 .testimonial {
-  margin: 267px 0 184px;
 
+  &__heading {
+    padding: 0 650px 0 70px;
+    margin: 0 auto 121px;
+  }
   &__title {
-    .title();
     line-height: 45px;
-    width: 35%;
-    margin: 0 0 121px 72px;
     background: url("../../img/Combined.png") no-repeat;
 
+  }
+  &__switch {
+    padding: 0 70px;
   }
   &__button {
     width: 65px;
@@ -376,7 +411,6 @@ body {
 .prev {
   background: @green;
   box-shadow: 0 25px 25px rgba(118, 196, 125, 0.314538);
-  margin: 0 0 0 72px;
   position: relative;
   &:hover {
     box-shadow: 0 15px 25px rgba(118, 196, 125, 0.314538);
@@ -419,6 +453,34 @@ body {
 .slider {
   width: 100%;
   margin: 0 0 56px;
+  &__next {
+    position: relative;
+
+    &:after {
+      content: '\A';
+      position: absolute;
+      width: 25%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 100%);
+
+    }
+  }
+  &__prev {
+    position: relative;
+
+    &:before {
+      content: '\A';
+      position: absolute;
+      z-index: 999;
+      width: 25%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 100%);
+    }
+  }
 }
 
 .slide {
@@ -429,34 +491,9 @@ body {
   border-radius: 5px;
   margin: 20px;
 
-  &__next {
-    position: relative;
 
-    &:after {
-      content: '\A';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 100%);
 
-    }
-  }
 
-  &__prev {
-    position: relative;
-
-    &:before {
-      content: '\A';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 100%);
-    }
-  }
 
   &__heading {
     .row();
@@ -464,13 +501,13 @@ body {
   }
 
   &__text {
-    .text();
     color: #324148;
     margin-left: 20px;
 
     &:before {
       content: '\201c';
-      .text();
+      line-height: 32px;
+      font-size: 18px;
       color: #324148;
       float: left;
       padding: 0 10px 75px 0;
@@ -489,31 +526,36 @@ body {
   }
 
   &__profession {
-
-    .font18();
     color: @black;
   }
 }
 
-.footer {
+.wrapper {
   background: url("../../img/Bg-footer.png") no-repeat 100%;
   background-size: cover;
   width: 100%;
-  margin: -345px 0 0 0;
+  margin: -230px 0 0 0;
+
 }
 
 .wrap {
-  padding: 155px 0 0;
+  padding: 415px 0 0;
+
   &__item {
     .row();
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0 0 118px;
+    width: 100%;
   }
   &__line {
     background: #EEEEEE;
     width: 100%;
     height: 2px;
+  }
+  &__menu {
+    width: 60%;
+    display: flex;
+    margin: 0 170px 0 0;
+
   }
 }
 
@@ -522,32 +564,36 @@ body {
   box-shadow: -1px 25px 20px #F2F2F2;
   border-radius: 5px;
   text-align: center;
-  margin: 126px 0;
   padding: 77px;
+  margin: 0 0 125px;
 
   &__title {
-    .title();
+    margin: 0 0 90px;
   }
   &__subject {
     color: @green;
   }
   &__button {
-    .button();
     background: @green;
-    .text();
     text-align: center;
     color: @white;
     border: none;
     width: 270px;
 
-    margin: 92px 0 14px;
+    margin: 0 0 15px;
     &:hover {
       box-shadow: 0 0 2px 2px @green;
     }
   }
 }
 
+.list:not(:last-child) {
+  margin: 0 170px 0 0;
+}
+
 .list {
+
+  width: 33%;
 
   &__name {
     .font16();
@@ -559,7 +605,6 @@ body {
   &__element {
     margin-bottom: 10px;
     &--link {
-      .link();
       color: #607D8B;
       &:hover {
         color: @green;
@@ -571,7 +616,7 @@ body {
 .meta {
   background: @green;
   border-radius: 5px;
-  width: 210px;
+  width: 40%;
   padding: 35px;
   &__title {
     line-height: 40px;
@@ -580,9 +625,9 @@ body {
     margin: 0 0 5px;
   }
   &__text {
-    .font16();
     letter-spacing: -0.1px;
     color: #EDF6E5;
+    margin: 0 0 13px;
 
     &--link {
       text-decoration: none;
@@ -592,12 +637,11 @@ body {
   }
 
   &__button {
-    .button();
     font-size: 16px;
     color: @green;
     border: none;
     background: @white;
-    margin: 13px 0 40px;
+    margin: 0 0 40px;
     .row();
     justify-content: space-evenly;
     &:hover {
@@ -618,10 +662,11 @@ body {
   }
 }
 
-@media screen and (max-width: 1390px) {
+@media screen  and (max-width: 1355px) {
   .farms {
-    width: 100%;
+    padding: 40px 90px 55px 70px;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -655,14 +700,49 @@ body {
     margin: 0 auto;
   }
 
+  .testimonial__title {
+    width: 70%;
+  }
+
+  .opportunities__heading {
+    padding: 0 110px;
+  }
+
+  .info__heading {
+    padding: 0;
+  }
+
   .investment {
-    flex-direction: column;
-    align-items: center;
+    display: block;
+  }
+
+  .farms {
+    width: 100%;
+    margin: 0;
+  }
+
+  .farms:not(last-child) {
+    margin: 0 0 50px;
+  }
+
+  .testimonial__heading {
+    padding: 0 225px 0 70px;
+  }
+
+  .works {
+    padding: 105px 90px;
 
   }
 
-  .testimonial__title {
-    width: 70%;
+  .wrap__item {
+    flex-direction: column;
+  }
+  .meta{
+    width: 100%;
+  }
+  .wrap__menu {
+    width: 100%;
+    margin: 0 0 50px;
   }
 }
 
@@ -678,6 +758,20 @@ body {
 
   .menu__element {
     padding: 0 5px;
+  }
+
+  .testimonial__heading {
+    padding: 0 70px;
+  }
+
+  .farms {
+    padding: 40px;
+  }
+
+
+
+  .list:not(:last-child) {
+    margin: 0 100px 0 0;
   }
 
 }
@@ -783,4 +877,22 @@ body {
     width: 80%;
   }
 
+  .opportunities__heading {
+    padding: 0 35px;
+  }
+
+  .features {
+    padding: 60px 0;
+  }
+
+  .info {
+    padding: 80px 0;
+  }
+
+  .testimonial__heading {
+    padding: 0 30px;
+  }
+  .list:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
 }
